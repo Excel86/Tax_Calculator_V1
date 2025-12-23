@@ -105,7 +105,7 @@ def calculate_new_regime_tax(income):
 # ================= STREAMLIT UI =================
 
 st.set_page_config(page_title="Income Tax Calculator", layout="centered")
-st.title("Ankur's Income Tax Calculator")
+st.title("Ankur's Income Tax Calculator Version-1")
 
 # FY / AY Selection
 fy = st.selectbox(
@@ -151,4 +151,5 @@ if st.button("Calculate Tax"):
             st.success("New Regime is more beneficial ✅")
         else:
             st.info("Both regimes result in the same tax ⚖")
+
 
